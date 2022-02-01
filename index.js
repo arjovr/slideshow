@@ -54,3 +54,5 @@ function currentSlide(n) {
     currentSlideIdx = n;
     dots[n].classList.add('active');
 }
+
+setInterval(next, 5000);
