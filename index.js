@@ -3,6 +3,9 @@ const imgs = document.querySelectorAll('.container > .img');
 function next() {
     const current = document.querySelector('.container > .img.current');
     let next = current.nextElementSibling;
+    if (next.tagName == 'A') {
+        next = null;
+    }
     if (!next) {
         next = imgs[0];
     }
